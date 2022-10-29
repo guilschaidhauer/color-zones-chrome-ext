@@ -2,7 +2,42 @@
 <html>
     <head>
         <title>Color Zones</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div class="cards-holder" id="timezonesCardHolder">
+        </div>
+
+        <button id="addTimezoneButton" class="new-timezone-button">+</button>
+
+        <div id="myForm" class="form-popup-off">
+            <div class="form-container">
+                <div class="timezone-label-container">
+                    <label class="timezone-select-label" for="timezones">Choose a timezone</label>
+                </div>
+                <form class="form">
+                    <input class="timezone-input" type="text" id="timezoneInput" list="timezonesSelect">
+                    <datalist name="timezones" id="timezonesSelect"></datalist>           
+                </form>
+                <div class="buttons-holder">
+                    <button id="confirmTimezoneSelectionButton" type="button" class="add-button">Add</button>
+                    <button id="cancelTimezoneButton" type="button" class="cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="timeResetButton" class="reset-time">
+            <button id="resetTimezoneButton" class="reset-time-button">Reset time</button>
+        </div>
+
+        <script src="utils/formatter.js"></script>
+        <script src="utils/dateHelper.js"></script>
+        <script src="utils/hoursHandler.js"></script>
+        <script src="utils/settingsHelper.js"></script>
+        <script src="timezonesList.js"></script>
+        <script src="divCreator.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
