@@ -1,0 +1,6 @@
+{
+    "manifest_version": 3,
+    "name": "Color Version",
+    "version": "1.0",
+    "description": "View multiple timezones on a single page with beautiful colors"
+}
